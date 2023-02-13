@@ -1,0 +1,41 @@
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+
+  td,
+  th {
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+  }
+
+  td {
+    text-align: center;
+    transition: all 0.2s;
+
+    &:disabled {
+      opacity: 0.5;
+      //   color: rgb(236, 18, 207);
+    }
+    &:hover:not(.disabled) {
+      background: #eee;
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    color: var(--primary-color);
+    font-weight: bold;
+    background: rgb(211, 189, 123);
+  }
+  
+  .selected {
+    color: blue;
+    background: rgb(160, 201, 164);
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  // color: rgb(228, 23, 23);
+}
